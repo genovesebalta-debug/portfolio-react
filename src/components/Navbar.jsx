@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   const links = ['Sobre mí', 'Proyectos', 'Servicios', 'Chat', 'Contacto'];
 
   return (
@@ -21,7 +17,6 @@ function Navbar() {
         WebkitTextFillColor: 'transparent'
       }}>Baltazar.</span>
 
-      {/* Desktop */}
       <ul style={{ display: 'flex', gap: '2rem', listStyle: 'none' }}>
         {links.map(link => (
           <li key={link}>
